@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alakbar Team - Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+        </div>
+        <div class="terminal-body">
+            <p class="command">Welcome to Alakbar Team Terminal</p>
+            <p class="command">Type <span class="highlight">'help'</span> to see available commands.</p>
+            <div class="input-area">
+                <span class="prompt">user@alakbar:~$</span>
+                <input type="text" id="commandInput" autofocus>
+            </div>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <!-- Team Dropdown -->
+    <div class="dropdown" id="teamDropdown">
+        <div class="dropdown-item">
+            <img src="https://via.placeholder.com/60" alt="Zaid">
+            <span>Zaid</span>
+        </div>
+        <div class="dropdown-item">
+            <img src="https://via.placeholder.com/60" alt="Sajad">
+            <span>Sajad</span>
+        </div>
+        <div class="dropdown-item">
+            <img src="https://via.placeholder.com/60" alt="Hamad">
+            <span>Hamad</span>
+        </div>
+        <div class="dropdown-item">
+            <img src="https://via.placeholder.com/60" alt="Sufyan">
+            <span>Sufyan</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
