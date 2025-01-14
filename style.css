@@ -59,8 +59,8 @@ header {
 }
 
 header .logo img {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     margin-bottom: 20px;
 }
 
@@ -89,8 +89,8 @@ header p {
 }
 
 .planet img {
-    width: 100px; /* حجم الصورة */
-    height: 100px; /* حجم الصورة */
+    width: 115px; /* حجم الصورة */
+    height: 115px; /* حجم الصورة */
     border-radius: 50%; /* جعل الصورة دائرية */
     object-fit: cover; /* التأكد من أن الصورة تملأ الدائرة */
     border: 2px solid #ffd700;
