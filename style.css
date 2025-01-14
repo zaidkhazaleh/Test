@@ -10,13 +10,14 @@ body {
     background-color: #0a0a23;
     color: #fff;
     line-height: 1.6;
-    overflow: hidden;
+    /* تم إزالة overflow: hidden; للسماح بالتمرير */
 }
 
 .universe {
     position: relative;
     min-height: 100vh;
     background: radial-gradient(circle, #1a1a40, #000);
+    padding-bottom: 60px; /* إضافة مسافة أسفل الصفحة للتمرير */
 }
 
 /* النجوم المتلألئة */
@@ -122,6 +123,9 @@ footer {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
