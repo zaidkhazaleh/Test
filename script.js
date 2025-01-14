@@ -1,16 +1,13 @@
-// يمكنك إضافة أي تفاعلية إضافية هنا
+// تأثيرات النجوم المتلألئة
 document.addEventListener('DOMContentLoaded', () => {
-    const teamMembers = document.querySelectorAll('.team-member');
+    const universe = document.querySelector('.universe');
 
-    teamMembers.forEach(member => {
-        member.addEventListener('mouseenter', () => {
-            member.style.transform = 'translateY(-10px)';
-            member.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
-        });
-
-        member.addEventListener('mouseleave', () => {
-            member.style.transform = 'translateY(0)';
-            member.style.boxShadow = 'none';
-        });
-    });
+    for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 2}s`;
+        universe.appendChild(star);
+    }
 });
