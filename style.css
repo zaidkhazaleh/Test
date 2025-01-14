@@ -89,8 +89,8 @@ header p {
 }
 
 .planet img {
-    width: 150px; /* حجم الصورة */
-    height: 150px; /* حجم الصورة */
+    width: 100px; /* حجم الصورة */
+    height: 100px; /* حجم الصورة */
     border-radius: 50%; /* جعل الصورة دائرية */
     object-fit: cover; /* التأكد من أن الصورة تملأ الدائرة */
     border: 2px solid #ffd700;
