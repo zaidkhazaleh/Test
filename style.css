@@ -10,11 +10,6 @@ body {
     background-color: #0a0a23;
     color: #fff;
     line-height: 1.6;
-    transform: scale(0.75); /* تصغير الصفحة إلى 75% */
-    transform-origin: top center; /* التأكد من أن التصغير يبدأ من الأعلى */
-    width: 133.33%; /* تعويض عن التصغير */
-    height: 133.33%; /* تعويض عن التصغير */
-    overflow: hidden; /* منع التمرير الزائد */
 }
 
 .universe {
@@ -81,21 +76,21 @@ header p {
 }
 
 .galaxy {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* تقليل المسافة بين الصور */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 صور في كل صف */
+    gap: 20px; /* المسافة بين الصور */
     padding: 20px;
+    max-width: 900px; /* تحديد عرض الشبكة */
+    margin: 0 auto; /* توسيط الشبكة */
 }
 
 .planet {
     text-align: center;
-    width: 120px; /* تصغير حجم الكواكب */
 }
 
 .planet img {
     width: 100%;
-    height: 120px; /* تصغير حجم الصور */
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ffd700;
@@ -112,30 +107,30 @@ header p {
 }
 
 .planet-info h2 {
-    font-size: 1em; /* تصغير حجم النص */
+    font-size: 1.2em;
     margin-bottom: 5px;
     color: #ffd700;
 }
 
 .planet-info p {
-    font-size: 0.8em; /* تصغير حجم النص */
+    font-size: 0.9em;
     color: #ccc;
 }
 
 /* زر متجر الأكبر ستور */
 .store-button {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .store-button a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #ffd700;
     color: #0a0a23;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -150,13 +145,13 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 footer p {
-    font-size: 0.9em; /* تصغير حجم النص */
+    font-size: 1em;
     color: #ccc;
 }
