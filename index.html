@@ -1,49 +1,176 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alakbar Team - Terminal</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta property="og:image" content="https://alakbar-store.com/public/uploads/files/bqc3wAO2ejKIRMJ.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:title" content="فريق Alakbar - فريق مبدع">
+    <link rel="icon" type="image/png" href="https://alakbar-store.com/public/uploads/files/bqc3wAO2ejKIRMJ.png">
+    <title>فريق Alakbar</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #462d6e;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        /* Header styling */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #73D58C;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #C8E7F9;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #73D58C;
+            margin-bottom: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        .team-member:hover img {
+            border-color: #EA3359;
+        }
+
+        .team-member h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #73D58C;
+        }
+
+        .team-member p {
+            font-size: 0.9em;
+            color: #C8E7F9;
+        }
+
+        .team-member a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #9EFCE3;
+        }
+
+        .footer a {
+            color: #EA3359;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div class="terminal">
-        <div class="terminal-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+    <div class="header">
+        <h1>فريق Alakbar</h1>
+        <p>فريق مبدع ومتخصص في تقديم الحلول التقنية</p>
+    </div>
+
+    <div class="team-grid">
+        <div class="team-member">
+            <a href="https://live.kwikmotion.com/sbrksaquranradiolive/ksaquranradio/chunks.m3u8" target="_blank">
+                <img src="https://alakbar-store.com/public/uploads/files/uCjJfTW3MA5VXUh.jpeg" alt="Zaid">
+                <h3>Zaid</h3>
+                <p>مطور ويب</p>
+            </a>
         </div>
-        <div class="terminal-body">
-            <p class="command">Welcome to Alakbar Team Terminal</p>
-            <p class="command">Type <span class="highlight">'help'</span> to see available commands.</p>
-            <div class="input-area">
-                <span class="prompt">user@alakbar:~$</span>
-                <input type="text" id="commandInput" autofocus>
-            </div>
-            <div id="output"></div>
+        <div class="team-member">
+            <a href="https://www.instagram.com/r6r9" target="_blank">
+                <img src="https://alakbar-store.com/public/uploads/files/_LB4D2px8hNtRAW.jpeg" alt="Sajad">
+                <h3>Sajad</h3>
+                <p>مصمم جرافيك</p>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.instagram.com/c.nb?igsh=dnhveXpjNG0wMzhv" target="_blank">
+                <img src="https://alakbar-store.com/public/uploads/files/P6OciXy2vBIFNZw.jpeg" alt="Hamad">
+                <h3>Hamad</h3>
+                <p>مطور تطبيقات</p>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="http://0_o.bio.link" target="_blank">
+                <img src="https://alakbar-store.com/public/uploads/files/73TeMyUxnKpcB0w.jpeg" alt="Sufyan">
+                <h3>Sufyan</h3>
+                <p>خبير أمن معلومات</p>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.instagram.com/3l_w" target="_blank">
+                <img src="https://alakbar-store.com/public/uploads/files/ESuxXHJg9cbtjno.jpeg" alt="Ali">
+                <h3>Ali</h3>
+                <p>مدير مشاريع</p>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="" target="_blank">
+                <img src="https://alakbar-store.com/public/uploads/files/hzQuJSEifm78jFd.jpeg" alt="Malak">
+                <h3>Malak</h3>
+                <p>مسوق رقمي</p>
+            </a>
         </div>
     </div>
 
-    <!-- Team Dropdown -->
-    <div class="dropdown" id="teamDropdown">
-        <div class="dropdown-item">
-            <img src="https://via.placeholder.com/60" alt="Zaid">
-            <span>Zaid</span>
-        </div>
-        <div class="dropdown-item">
-            <img src="https://via.placeholder.com/60" alt="Sajad">
-            <span>Sajad</span>
-        </div>
-        <div class="dropdown-item">
-            <img src="https://via.placeholder.com/60" alt="Hamad">
-            <span>Hamad</span>
-        </div>
-        <div class="dropdown-item">
-            <img src="https://via.placeholder.com/60" alt="Sufyan">
-            <span>Sufyan</span>
-        </div>
+    <div class="footer">
+        <p>تابعنا على <a href="https://Alakbar-Store.com" target="_blank">Alakbar-Store.com</a></p>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
