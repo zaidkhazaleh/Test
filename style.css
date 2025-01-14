@@ -117,7 +117,7 @@ header p {
 .planet-info {
     margin-top: 10px;
     position: relative; /* إضافة position: relative; */
-    z-index: 1; /* تأكد من أن النص فوق الرابط */
+    z-index: 3; /* تأكد من أن النص فوق الرابط */
 }
 
 .planet-info h2 {
