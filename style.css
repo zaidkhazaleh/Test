@@ -93,28 +93,36 @@ header p {
     height: 110px; /* حجم الصورة */
     border-radius: 50%; /* جعل الصورة دائرية */
     object-fit: cover; /* التأكد من أن الصورة تملأ الدائرة */
-    border: 2px solid #ffd700;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ffd700; /* إطار ذهبي */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير الانتقال */
+    cursor: pointer; /* جعل المؤشر يظهر كيد عند تمرير الفأرة */
 }
 
 .planet img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1); /* تكبير الصورة عند التمرير */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* ظل متوهج */
+}
+
+.planet a {
+    text-decoration: none; /* إزالة التسطير تحت الرابط */
+    pointer-events: auto; /* السماح بالنقر */
+    display: inline-block; /* ضمان أن الرابط يحتضن الصورة تمامًا */
 }
 
 .planet-info {
-    margin-top: 10px;
+    margin-top: 10px; /* مسافة بين الصورة والنص */
+    text-align: center; /* توسيط النص */
 }
 
 .planet-info h2 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    color: #ffd700;
+    font-size: 1.2em; /* حجم النص */
+    margin-bottom: 5px; /* مسافة أسفل العنوان */
+    color: #ffd700; /* لون ذهبي */
 }
 
 .planet-info p {
-    font-size: 0.9em;
-    color: #ccc;
+    font-size: 0.9em; /* حجم النص */
+    color: #ccc; /* لون رمادي فاتح */
 }
 
 /* زر متجر الأكبر ستور */
